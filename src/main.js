@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     function showDoctors(response) {
       for (let i = 0; i < response.data.length; i++) {
-        $('#name').append(` Name: ${response.data[i].profile.first_name}`);
+        $('.results').append(`Name: ${response.data[i].profile.first_name} ${response.data[i].profile.last_name}`<br>);
       }
     }
   });

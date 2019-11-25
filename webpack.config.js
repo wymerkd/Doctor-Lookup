@@ -15,14 +15,14 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
+    new Dotenv(),
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'weather',
+      title: 'newtemp',
       template: './src/index.html',
       inject: 'body'
     })
-    new Dotenv()
   ],
   module: {
     rules: [
@@ -35,12 +35,9 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: [
-            /node_modules/,
-            /spec/
-          ],
+        exclude: /node_modules/,
         loader: "eslint-loader"
+          }
+        ]
       }
-    ]
-  }
-};
+    };

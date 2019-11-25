@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     function showDoctors(response) {
       for (let i = 0; i < response.data.length; i++) {
-        $('.results').append(`Name: ${response.data[i].profile.first_name} ${response.data[i].profile.last_name}`<br>);
+        $('.results').append(`Name: ${response.data[i].profile.first_name} ${response.data[i].profile.last_name} Phone: ${response.data[i].practices[0].phones[0].number} Website: ${response.data[i].practices[0].website} Address: ${response.data[i].practices[0].visit_address.street} ${response.data[i].practices[0].visit_address.city}, ${response.data[i].practices[0].visit_address.state} ${response.data[i].practices[0].visit_address.zip} Accepting new patients: ${response.data[i].practices[0].accepts_new_patients} <br>`);
       }
     }
   });

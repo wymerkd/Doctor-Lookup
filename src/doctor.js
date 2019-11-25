@@ -1,7 +1,8 @@
 export class Doctors {
   async findDoctors(doctorName, userSymptom) {
     try {
-      let response = await fetch(`https://api.betterdoctor.com/2016-03-01/doctors?name=${doctorName}&query=${userSymptom}&location=or-portland&skip=0&limit=10&user_key=${process.env.API_KEY}`);
+      let response = await fetch(`https://api.betterdoctor.com/2016-03-01/doctors?name=${doctorName}&query=${userSymptom}&location=or-portland&skip=0&user_key=${process.env.API_KEY}`);
+      
       let jsonifiedResponse = await response.json();
       console.log(jsonifiedResponse);
       return jsonifiedResponse;

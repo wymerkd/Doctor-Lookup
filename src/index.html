@@ -2,17 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Playfair+Display+SC|Staatliches&display=swap" rel="stylesheet">
     <title>Doctor-Lookup</title>
   </head>
   <body>
+    <div id="center" class="container">
+      <h1 id="doc-header">Doctor <span id=lookup-header>Lookup</span></h1>
+      <div class="input">
+        <label for="user-symptom">
+          <input id="user-symptom" type="text" placeholder="Type your symptoms or search by doctor name" size="44" >
+        </label>
+      </div>
+      <button id="submit" type="button" name="button" class="btn-primary">Search</button>
+      <button id="clear" type="button" name="button" class="btn-success">Clear Results</button>
+    </div>
     <div class="container">
-      <label for="user-symptom">
-        <input id="user-symptom" type="text" placeholder="Type your symptoms or search by doctor name" >
-      </label>
-      <!-- <label for="doctor-name">
-        <input id="doctor-name" type="text" placeholder="Search doctors by name" >
-      </label> -->
-      <button id="submit" type="button" name="button">Submit</button>
       <div class="results">
       </div>
     </div>

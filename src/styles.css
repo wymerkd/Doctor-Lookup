@@ -1,3 +1,39 @@
-/* body {
-  background-color: blue;
-} */
+/* Available Google Fonts
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Staatliches', cursive; */
+
+body {
+  background-color: rgb(24, 129, 148);
+}
+
+h1 {
+  font-size: 70px;
+  text-shadow: 2px 2px 1px #dfe6e9;
+}
+
+#center {
+  text-align: center;
+  padding-top: 300px;
+}
+
+#doc-header {
+  color: rgb(183, 193, 184);
+  font-family: 'Staatliches', cursive;
+}
+
+#lookup-header {
+  color: rgb(17, 38, 103);
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.input, #submit {
+  display: inline;
+}
+
+.results {
+  padding-top: 60px;
+  font-size: 24px;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+}

@@ -27,7 +27,7 @@ h1 {
   font-family: 'Luckiest Guy', cursive;
 }
 
-#submit, #clear {
+#submit {
   margin: 10px 10px 0 0;
 }
 
@@ -36,4 +36,6 @@ h1 {
   font-size: 24px;
   font-family: 'Playfair Display SC', serif;
   font-weight: bold;
+  color: rgb(236, 236, 236);
+  text-shadow: 2px 2px 1px black;
 }

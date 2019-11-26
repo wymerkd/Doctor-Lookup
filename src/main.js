@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 $(document).ready(function() {
-  $('#submit').click(function() {
+  $('#submit-form').submit(function(event) {
+    event.preventDefault();
     const userSymptom = $("#user-symptom").val();
     console.log(userSymptom);
 
@@ -30,15 +31,16 @@ $(document).ready(function() {
             $('.results').append(`Website: ${response.data[i].practices[0].website}<br>`);
           }
           if (response.data[i].practices[0].accepts_new_patients === true) {
-            $('.results').append(`Currently accepting new patients <br> <hr>`);
+            $('.results').append(`Currently accepting new patients <br> <hr> <hr>`);
           } else {
             $('.results').append(`Not currently accepting new patients <br> <hr>`);
           }
         }
       }
     }
-    $('#clear').click(function() {
+    $('#user-symptom').click(function() {
       $('.results').empty();
+      $('#error-message').hide();
     });
   });
 });

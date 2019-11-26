@@ -7,23 +7,25 @@
 
 ## Description
 
-_This project demonstrates my current skills and understanding of HTML, CSS, Bootstrap 4, Javascript, jQuery, Webpack, and APIs. The application consists of an order form where the user can customize a pizza order. It collects data from the user and runs the it through a series of loops and branching to determine the price of the custom pizza. The resulting price and summary of their order will appear on the page when the submit button is clicked._
+_This project demonstrates my current skills and understanding of HTML, CSS, Bootstrap 4, Javascript, jQuery, Webpack, and APIs. The application consists of an input field where a user can search by inputting symptoms or a doctor's name. After searching, the application will incorporate the Better Doctor API to return a list of doctors that meet the search query. The doctor's name, phone number, address, website, and whether or not they are accepting new patients will all be returned to the user._
 
 
 ## Specifications
 
 |  Behavior | Input  | Output  |
 |---|---|---|
-| Application calculates price adding $1.00 for each topping if more than three toppings are selected| Toppings: Pepperoni , Garlic, Mushrooms, Spinach | +$1.00|
-| If size of pizza selected is "small", a corresponding price is added| Small | + $8.00|
-| If size of pizza selected is "medium", a corresponding price is added| Medium | + $10.00|
-| If size of pizza selected is "large", a corresponding price is added| Large | + $12.00|
+| Application takes a user's inputted name and returns a list of doctor's| John | List of doctor's names containing "John" and |
+| Application takes a user's inputted symptom and returns a list of doctor's that can treat symptom| fever | List of doctor's that can treat a "fever"|
+| If search results do not match any doctors in the database, the user is informed.| Bob | "No doctors meet the criteria"|
+
 
 ## Setup/Installation Requirements
-* _Use the following link to view the page: ()_
-* _Or_
 * _Clone or download the repository from GitHub_
-* _Open index.html in browser_
+* _Visit the Better Doctor API site and click “Get a free API key”_
+* _Create an .env file in the root of this directory_
+* _Open the .env file and add the following:  API_KEY = YOUR API KEY_
+* _In the terminal, run $ npm install_
+
 
 ## Known Bugs
 
@@ -40,6 +42,8 @@ _Please contact Kyle Wymer, at wymerkd@gmail.com if support is needed_
 * _Bootstrap 4_
 * _JavaScript_
 * _jQuery_
+* _Webpack_
+* _Better Doctor API_
 
 ### License
 

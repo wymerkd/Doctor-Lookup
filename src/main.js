@@ -40,7 +40,6 @@ $(document).ready(function() {
     }
     $('#user-symptom').click(function() {
       $('.results').empty();
-      $('#error-message').hide();
     });
   });
 });

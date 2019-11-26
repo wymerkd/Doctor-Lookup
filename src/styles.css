@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 88px;
   text-shadow: 2px 2px 1px #dfe6e9;
 }
 
@@ -22,13 +22,13 @@ h1 {
   font-family: 'Staatliches', cursive;
 }
 
-#lookup-header {
+.fancy-header {
   color: rgb(17, 38, 103);
   font-family: 'Luckiest Guy', cursive;
 }
 
-.input, #submit {
-  display: inline;
+#submit, #clear {
+  margin: 10px 10px 0 0;
 }
 
 .results {

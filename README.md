@@ -16,6 +16,7 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 |---|---|---|
 | Application takes a user's inputted name and returns a list of doctor's| John | List of doctor's names containing "John"|
 | Application takes a user's inputted symptom and returns a list of doctor's that can treat symptom| fever | List of doctor's that can treat a "fever"|
+| If the API call is unsuccessful, the user will be alerted.| response.ok === false| "There was an error handling your request: 401 Unauthorized"|
 | If search results do not match any doctors in the database, the user is informed.| Bob | "No doctors meet the criteria"|
 
 

@@ -1,13 +1,12 @@
 export class Doctors {
   async findDoctors(userSymptom) {
-    try {
-      let response = await fetch(`https://api.betterdoctor.com/2016-03-01/doctors?query=${userSymptom}&location=or-portland&skip=0&user_key=${process.env.API_KEY}`);
+    let response = await fetch(`https://api.betterdoctor.com/2016-03-01/doctors?query=${userSymptom}&location=or-portland&skip=0&user_key=${process.env.API_KEY}`);
 
+    if(response.ok === true) {
       let jsonifiedResponse = await response.json();
-      console.log(jsonifiedResponse);
       return jsonifiedResponse;
-    } catch(error) {
-      console.error("There was an error handling your request: " + error.message);
+    } else {
+      alert("There was an error handling your request: " + response.status + " " + response.statusText);
     }
   }
 }

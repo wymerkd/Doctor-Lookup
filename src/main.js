@@ -9,8 +9,7 @@ $(document).ready(function() {
   $('#submit-form').submit(function(event) {
     event.preventDefault();
     const userSymptom = $("#user-symptom").val();
-    console.log(userSymptom);
-
+    
     (async () => {
       let getDoctors = new Doctors();
       const response = await getDoctors.findDoctors(userSymptom);

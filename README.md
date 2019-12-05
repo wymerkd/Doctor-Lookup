@@ -25,6 +25,7 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 * _Create an .env file in the root of this directory_
 * _Open the .env file and add the following:  API_KEY = YOUR API KEY_
 * _In the terminal, run $ npm install_
+* _In the terminal, run $ npm run start_
 
 
 ## Known Bugs
